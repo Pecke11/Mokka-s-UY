@@ -443,3 +443,64 @@ footer {
     font-size: 14px;
     color: #8D6E63;
 }
+
+/* Tablets */
+
+@media (max-width: 900px) {
+
+    #contenedorProductos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 0 20px;
+    }
+
+    .footerDeco {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+
+/* Celulares */
+
+@media (max-width: 600px) {
+
+    .barrita {
+        gap: 8px;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .barrita a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+    .Titulo {
+        font-size: 38px;
+    }
+
+    .LineasDecorativas {
+        width: 95%;
+    }
+
+    .LineasDecorativas span {
+        font-size: 18px;
+    }
+
+    #contenedorProductos {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .ContenedorCarrito {
+        max-width: 100%;
+    }
+
+    .CarritoBotones {
+        flex-direction: column;
+    }
+
+    .footerDeco {
+        grid-template-columns: 1fr;
+    }
+}
