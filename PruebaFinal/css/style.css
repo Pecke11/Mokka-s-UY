@@ -1,0 +1,445 @@
+.barrita {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #efebe9;
+    padding: 12px 20px;
+    border-bottom: 1px solid #d7ccc8;
+}
+
+.barrita a {
+    text-decoration: none;
+    color: #4e342e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.barrita a:hover {
+    background-color: #d7ccc8;
+    color: #271c18;
+}
+
+
+.Titulo {
+    font-size: 55px;
+    font-weight: 800;
+    color: #3e2723;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(62, 39, 35, 0.15);
+    position: relative;
+}
+
+.Titulo::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #8d6e63;
+    margin: 12px auto 0 auto;
+    border-radius: 2px;
+}
+
+
+.LineasDecorativas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+.LineasDecorativas::before,
+.LineasDecorativas::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #8d6e63;
+    margin: 0 15px;
+}
+
+.LineasDecorativas span {
+    font-size: 25px;
+    font-weight: 600;
+    color: #5d4037;
+    font-style: italic;
+}
+
+
+body {
+    background-color: #E8D6C3;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#MenuSeccion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.FiltrosCategorias {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.FiltrosCategorias button {
+    transition: 0.3s;
+}
+
+.FiltrosCategorias button:hover {
+    background-color: #8d6e63;
+    color: white;
+}
+
+.BotonFiltro {
+    background-color: transparent;
+    border: 1px solid #85675b;
+    color: #5D4037;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+
+#contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+
+.TarjetaProductos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease;
+    animation: aparecer 1s ease;
+}
+
+.TarjetaProductos img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.TarjetaProductos:hover img {
+    transform: scale(1.05);
+}
+
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.PieTarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 15px;
+}
+
+
+.BotonAgregar {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #8d6e63;
+    color: #5D4037;
+    border-radius: 20px;
+    width: 100%;
+    padding: 8px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.BotonAgregar:hover {
+    background-color: #8d6e63;
+    color: white;
+}
+
+
+#SeccionCarrito {
+    display: flex;
+    justify-content: center;
+    margin: 40px 20px 60px 20px;
+}
+
+.ContenedorCarrito {
+    background-color: #FFFFFF;
+    border: 1px solid #EBE4DD;
+    border-radius: 14px;
+    padding: 25px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.TituloCarrito {
+    font-size: 22px;
+    color: #3E2723;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #EBE4DD;
+    padding-bottom: 10px;
+}
+
+#listaCarritoVacia p {
+    color: #A1887F;
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.TicketTotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #3E2723;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.montoTotal {
+    font-size: 24px;
+    color: #8D5C43;
+    font-weight: 800;
+}
+
+
+.CarritoBotones {
+    display: flex;
+    gap: 15px;
+}
+
+.botonVaciar,
+.botonFinalizar {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    flex: 1;
+    transition: all 0.3s ease;
+}
+
+.botonVaciar {
+    background-color: transparent;
+    border: 1px solid #D7CCC8;
+    color: #795548;
+}
+
+.botonVaciar:hover {
+    background-color: #EFEBE9;
+}
+
+.botonFinalizar {
+    background-color: #5D4037;
+    border: 1px solid #5D4037;
+    color: white;
+}
+
+.botonFinalizar:hover {
+    background-color: #3E2723;
+}
+
+
+.itemCarrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.nombreCarrito {
+    margin: 0;
+    font-style: italic;
+    color: #9b796c;
+}
+
+.controlesCantidad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botonSumar,
+.botonRestar {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cbb8ae;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #6b4638;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botonSumar:hover,
+.botonRestar:hover {
+    background-color: #6b4638;
+    color: white;
+    border-color: #6b4638;
+}
+
+.cantidadProducto {
+    min-width: 18px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.precioCarrito {
+    font-weight: bold;
+    font-size: 14px;
+    color: #6b4638;
+}
+
+
+footer {
+    background-color: #2D1E1A;
+    color: #EBE4DD;
+    padding: 60px 20px 30px 20px;
+    margin-top: 80px;
+    border-top: 3px solid #8D6E63;
+}
+
+.footerDeco {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(235, 228, 221, 0.15);
+}
+
+.FooterBloque {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FooterBloque h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.FooterBloque h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: #8D6E63;
+}
+
+.FooterBloque h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #D7CCC8;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.FooterBloque h4::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: #8D6E63;
+}
+
+.FooterBloque p {
+    font-size: 16px;
+    color: #BCAAA4;
+    line-height: 1.6;
+}
+
+
+#InfoNosotros {
+    grid-column: auto;
+    max-width: none;
+    margin: 0;
+}
+
+#InfoNosotros p {
+    max-width: 100%;
+    padding: 0;
+}
+
+
+.FooterRedes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.FooterRedes span {
+    color: #BCAAA4;
+    font-size: 16px;
+}
+
+
+.FooterDerechos {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.FooterDerechos p {
+    font-size: 14px;
+    color: #8D6E63;
+}

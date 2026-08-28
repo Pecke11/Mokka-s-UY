@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "nombre": "Latte Clásico",
+        "descripcion": "Espresso suave con leche cremosa y espuma",
+        "precio": 180,
+        "categoria": "Cafés",
+        "imagen": "./assets/imgs/Latte.png"
+    },
+
+    {
+        "id": 2,
+        "nombre": "Mokka",
+        "descripcion": "Espresso, leche y chocolate",
+        "precio": 220,
+        "categoria": "Cafés",
+        "imagen": "./assets/imgs/Mokka.png"
+    },
+
+    {
+        "id": 3,
+        "nombre": "Capuccino",
+        "descripcion": "Espresso con leche vaporizada y espuma",
+        "precio": 200,
+        "categoria": "Cafés",
+        "imagen": "./assets/imgs/Capuccino.jpg"
+    },
+
+    {
+        "id": 4,
+        "nombre": "Iced Coffe",
+        "descripcion": "Cafe frio con leche y hielo",
+        "precio": 210,
+        "categoria": "Bebidas frias",
+        "imagen": "./assets/imgs/IcedCofee.jpg"
+    },
+
+    {
+        "id": 5,
+        "nombre": "Sandwiches Jamón y Queso",
+        "descripcion": "Sandwiches calientes de jamon y queso derretido",
+        "precio": 180,
+        "categoria": "Panaderia",
+        "imagen": "./assets/imgs/SandwichesJamonYQueso.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Bata de Bondiola",
+        "descripcion": "Mondiola, Rúcula fresca y suave queso filadelfia",
+        "precio": 320,
+        "categoria": "Panaderia",
+        "imagen": "./assets/imgs/BataDeBondiola.jpg"
+    },
+
+    {
+        "id": 7,
+        "nombre": "Cheesecake",
+        "descripcion": "Suave y cremosa tarta coronada con una exquisita salsa artesanal de frutos rojos",
+        "precio": 220,
+        "categoria": "Dulces",
+        "imagen": "./assets/imgs/Cheesecake.jpg"
+    },
+    
+    {
+        "id": 8,
+        "nombre": "Cookie de Chocolate",
+        "descripcion": "Galleta artesanal crujiente y repleta de abundantes chips de chocolate",
+        "precio": 130,
+        "categoria": "Dulces",
+        "imagen":"./assets/imgs/cookie.jpg"
+    }
+
+]

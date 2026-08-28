@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Moka's</title>
+    
+</head>
+<body>
+   
+<header  id="inicio">
+    <nav class="barrita">
+        <a href="#">Inicio</a>
+        <a href="#">Menú</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Contacto</a>
+    </nav>
+</header>
+
+<main>
+
+    <section id="menu">
+
+        <h1 class="Titulo">Moka's UY</h1>
+
+        <div class="LineasDecorativas">
+            <span>La mejor cafetería de Montevideo</span>
+        </div>
+
+
+        <div id="MenuSeccion">
+
+            <div class="MenuCabecera">
+
+                <div class="FiltrosCategorias">
+                    <button id="filtroTodos" class="BotonFiltro">Todos</button>
+                    <button id="filtroCafes" class="BotonFiltro">Cafés</button>
+                    <button id="filtroFrias" class="BotonFiltro">Bebidas frías</button>
+                    <button id="filtroPanaderia" class="BotonFiltro">Panadería</button>
+                    <button id="filtroDulces" class="BotonFiltro">Dulces</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <div id="contenedorProductos"></div>
+
+    </section>
+
+
+    <section id="SeccionCarrito">
+
+        <div class="ContenedorCarrito">
+
+            <h3 class="TituloCarrito">🛒 Tu pedido</h3>
+
+            <div id="listaCarritoVacia">
+                <p>Aún no has agregado productos.</p>
+            </div>
+
+            <div class="TicketTotal">
+                <span>Total a pagar:</span>
+                <span class="montoTotal">$ 0</span>
+            </div>
+
+            <div class="CarritoBotones">
+                <button class="botonVaciar">Vaciar carrito</button>
+                <button class="botonFinalizar">Finalizar compra</button>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+    
+<footer>
+    <div class="footerDeco">
+    
+        <div class="FooterBloque" id="InfoNosotros">
+            <h3> Moka's UY ☕</h3>
+            <p>Nacimos en el corazón de Montevideo con una misión clara: transformar cada taza de café en una experiencia única. Seleccionamos los mejores granos de especialidad y elaboramos cada producto de forma artesanal para acompañar tus mejores momentos del día.</p>
+        </div>
+        
+        <div class="FooterBloque">
+            <h4> Horarios ⏰</h4>
+            <p>Lunes a Sábados</p>
+            <p>08:00 - 20:00 hs</p>
+        </div>
+
+        <div class="FooterBloque" id="contacto">
+            <h4> Contacto 📞</h4>
+            <div class="FooterRedes">
+                <a>Instagram</a>
+                <a>WhatsApp</a>
+                <a>Ubicación</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="FooterDerechos">
+        <p>&copy; 2026 Moka's UY — Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./js/app.js"></script>
+
+</body>    
+</html>
